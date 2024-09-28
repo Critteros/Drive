@@ -24,6 +24,8 @@ const config = {
     '^next(?:\\/[a-zA-Z0-9_\\-]+)*$',
     '<THIRD_PARTY_MODULES>',
     '',
+    '^@/(.*)$',
+    '',
     '^(?!.*[.]css$)[./].*$',
     '',
     '.css$',

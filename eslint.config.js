@@ -18,11 +18,20 @@ const compat = new FlatCompat({
 
 const patchedConfig = fixupConfigRules([...compat.extends('next/core-web-vitals')]);
 
+/** @type {import('eslint').Linter.Config[]} */
 const config = [
   ...patchedConfig,
   ...ts.configs.recommended,
   prettierConfigRecommended,
   { ignores: ['.next/*'] },
+  {
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-empty-object-type': 'off',
+      '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
+      'prettier/prettier': 'warn',
+    },
+  },
 ];
 
 export default config;
