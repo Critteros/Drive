@@ -18,6 +18,7 @@ const config = {
   importOrderTypeScriptVersion: '5.0.0',
   importOrder: [
     '<BUILTIN_MODULES>',
+    '',
     '^react$',
     '^react-dom$',
     '^next(?:\\/[a-zA-Z0-9_\\-]+)*$',
