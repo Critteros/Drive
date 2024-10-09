@@ -23,7 +23,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
-    "@radix-ui/react-alert-dialog": "^1.1.1",
+    "@radix-ui/react-alert-dialog": "1.1.2-rc.12",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-checkbox": "^1.1.1",
@@ -78,8 +78,8 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
     "babel-plugin-react-compiler": "0.0.0-experimental-b12479e-20240926",
     "eslint": "^9.11.1",
     "eslint-config-next": "^15.0.0-rc.0",
@@ -97,6 +97,8 @@
     "typescript-eslint": "^8.7.0"
   },
   "overrides": {
-    "eslint": "$eslint"
+    "eslint": "$eslint",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
   }
 }
